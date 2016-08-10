@@ -1,0 +1,76 @@
+
+@-webkit-keyframes pic_1 {
+    0% { opacity: 1;}
+    15% { opacity: 1;}
+    25% { opacity: 0;}
+    90% { opacity: 0;}
+    100% { opacity: 1;}
+}
+@-webkit-keyframes pic_2 {
+    0% { opacity: 0;}
+    15% { opacity: 0;}
+    25% { opacity: 1;}
+    40% { opacity: 1;}
+    50% { opacity: 0;}
+    100% { opacity: 0;}
+}
+@-webkit-keyframes pic_3 {
+    0% { opacity: 0;}
+    40% { opacity: 0;}
+    50% { opacity: 1;}
+    65% { opacity: 1;}
+    75% { opacity: 0;}
+    100% { opacity: 0;}
+
+}
+
+/****  主框架   ****/
+#container {
+    width: 900px;
+    height: 350px;
+    box-shadow: 1px 1px 10px #aaa;
+    padding: 5px;
+    margin: 20px auto;
+    position: relative;
+}
+
+ul {
+    width: 900px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+li {
+    list-style: none;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+img {
+    width: 900px;
+    height: 350px;
+}
+
+body { margin: 0 auto;}
+
+/****  鼠标悬停暂停动画   ****/
+
+#slide:hover li {
+    -webkit-animation-play-state: running;
+}
+
+/****  动画绑定   ****/
+
+#first {
+    -webkit-animation: pic_1 10s infinite;
+}
+#second {
+    -webkit-animation: pic_2 10s infinite;
+}
+#third{
+    -webkit-animation: pic_3 10s infinite;
+
+}
